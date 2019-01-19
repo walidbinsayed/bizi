@@ -1,0 +1,81 @@
+@media(max-width:1199px){
+
+
+
+}
+/* End of 1199px(Laptop) media CSS */
+
+
+@media(max-width:991px){
+  .banner-content p {
+    padding: 0;
+  }
+
+
+}
+/* End of 991px(Tab) media CSS */
+
+
+@media(max-width:767px){
+  .header-section.sticky {
+  	background: rgba(0,0,0,0.7);
+  }
+  .header-section.sticky .navbar-toggler {
+  	border-color: #ffffff;
+  	background: #ffffff;
+  }
+  .header-section.sticky .navbar-toggler .icon-bar{
+    background: #333333;
+  }
+  .banner-content h2 {
+    font-size: 28px;
+    margin: 0;
+    line-height: 40px;
+  }
+  .banner-content p {
+    font-size: 15px;
+    line-height: 23px;
+    padding: 0;
+  }
+  .about_us-section, .media-section {
+    height: auto;
+    padding: 50px 0;
+  }
+  .about-details {
+    height: auto;
+  }
+  .about-img::after {
+    display: none;
+  }
+  .about-img {
+    margin: 0 0 25px;
+  }
+  .about-content {
+    height: auto;
+    text-align: center;
+    display: block;
+  }
+  .about-img img {
+    height: 300px;
+  }
+  .section-title {
+    margin: 0 0 30px;
+  }
+  .footer-content {
+    justify-content: center;
+  }
+  .footer-content p {
+    margin: 0 0 5px;
+  }
+
+
+}
+/* End of 767px(Mobile) media CSS */
+
+
+@media(max-width:320px){
+
+
+
+}
+/* End of 320px(Small Mobile) media CSS */

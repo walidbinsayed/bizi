@@ -1,0 +1,408 @@
+/*
+  Theme Name: HTML Template
+  Author: Template Author
+  Author URL:
+  Support:
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default
+2. HEADER
+3. HERO
+4. ABOUT US
+5. CONTACT US
+6. FOOTER
+
+*/
+
+/*--------------Default CSS start---------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Charm:700');
+
+html{
+   scroll-behavior: smooth;
+}
+.area {
+  width: 100%;
+  float: left;
+}
+a,button,input,textarea {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+a,a:hover,a:focus,a:active{
+	text-decoration: none !important;
+	outline: none !important;
+}
+body{
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.cus_overlay, .cus_gradient{
+  position: relative;
+  z-index: 1;
+}
+.cus_overlay::after, .cus_gradient::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: inline-block !important;
+}
+.cus_gradient::after{
+  background: #f8000f;
+  background: -moz-linear-gradient(45deg, #f8000f 0%, #0166b7 100%);
+  background: -webkit-linear-gradient(45deg, #f8000f 0%,#0166b7 100%);
+  background: linear-gradient(45deg, #f8000f 0%,#0166b7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8000f', endColorstr='#0166b7',GradientType=1 );
+  opacity: 0.95;
+}
+.cla_cta-btn {
+  text-transform: uppercase;
+  background: #0560AD;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+.cla_cta-btn.red-btn {
+	background: #D34848;
+}
+.cla_cta-btn:hover, .cla_cta-btn:focus {
+  background: #333333;
+  color: #ffffff;
+}
+.circle-anim {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #EC0814;
+	top: 20%;
+	right: 30%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+	animation: circle_anim 2.5s linear infinite;
+}
+.circle-anim.anim2 {
+	top: 62.5%;
+	right: 46%;
+}
+@keyframes circle_anim {
+  0%{
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(4);
+    opacity: 0.3;
+  }
+  100%{
+    transform: scale(7);
+    opacity: 0.01;
+  }
+}
+.box-bar {
+	width: 500px;
+	height: 500px;
+	background: #FEE6E7;
+	position: absolute;
+	bottom: -300px;
+	right: -300px;
+	transform: rotate(45deg);
+	border: 15px solid #FFD8DA;
+  transition: all 0.3s linear;
+}
+
+/*--------------End of global css-------------*/
+
+/*--------------Start of Header css-------------*/
+
+.navbar{
+  padding: 0;
+}
+.navbar-toggler {
+	border: 2px solid #285F9D;
+	padding: 2px 5px;
+	border-radius: 0;
+	cursor: pointer;
+	background: #285F9D;
+	border-radius: 2px;
+}
+.navbar-toggler .icon-bar {
+  width: 25px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: 4px 0;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown-menu {
+	top: 90%;
+}
+.header-menu li a {
+	padding: 10px;
+	display: inline-block;
+}
+.header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.3s linear;
+  padding: 7px 0;
+}
+.header-menu li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+.navbar-brand {
+	color: #ffffff;
+	font-size: 50px;
+	line-height: 50px;
+	margin: 0;
+}
+.navbar-brand:hover {
+	color: #F30612;
+}
+.header-menu li a:hover, .header-menu li a:focus {
+  color: #F60810;
+}
+.header-section.sticky {
+	background: rgba(0,0,0,0.6);
+	padding: 3px 0;
+}
+
+/*--------------End of Header css-------------*/
+
+/*------------- Banner CSS start ---------*/
+
+.banner-section{
+  background: url(../img/hero_bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.banner-content {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+}
+.banner-content h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  margin: 0 0 10px;
+}
+.banner-content p {
+  color: #ffffff;
+  opacity: 0.7;
+  text-align: center;
+  margin: 0 0 35px;
+  padding: 0 100px;
+}
+
+/*------------- Banner CSS end ---------*/
+
+/*------------- About CSS start ---------*/
+
+.about_us-section {
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+  overflow: hidden;
+}
+.about-details {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.about-img img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.about-img {
+  position: relative;
+  z-index: 1;
+}
+.about-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -15px;
+  left: -15px;
+  background: #F10811;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+}
+.about-content {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.about-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+.about-content p {
+  margin: 0 0 35px;
+}
+
+/*------------- About CSS end ---------*/
+
+/*------------- Media CSS start ---------*/
+
+.media-section {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background: rgba(0,0,0,0.01);
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 0 60px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.single-media-box img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.single-media-box {
+  margin: 15px 0;
+}
+.section-title::after {
+	content: "";
+	width: 245px;
+	height: 10px;
+	background: #F20911;
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: -1;
+	opacity: 0.3;
+}
+
+.single-media-box {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+.single-media-box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block !important;
+  transition: all 0.3s linear;
+}
+.single-media-box:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.single-media-box img {
+  transition: all 0.3s linear;
+}
+.single-media-box:hover img {
+  transform: scale(1.2);
+}
+.single-media-box i.fas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 25px;
+  line-height: 25px;
+  color: #F50810;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s linear;
+  transform: scale(3);
+}
+.single-media-box:hover i.fas {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/*------------- Media CSS end ---------*/
+
+/*------------- Footer CSS start ---------*/
+
+.footer-content p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer {
+  background: #333333;
+  padding: 20px 0;
+}
+.footer-content p a {
+  color: #F30912;
+}
+
+/*------------- Footer CSS end ---------*/
