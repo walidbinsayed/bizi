@@ -206,11 +206,17 @@ body{
   height: 100vh;
 }
 .banner-content {
+  display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	height: 100vh;
-	justify-content: center;
-	align-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+  height: 100vh;
 }
 .banner-content h2 {
   color: #ffffff;
@@ -241,10 +247,16 @@ body{
 }
 .about-details {
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 .about-img img {
   height: 500px;
@@ -268,9 +280,13 @@ body{
 }
 .about-content {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .about-content h2 {
   font-weight: 700;
@@ -287,11 +303,17 @@ body{
 
 .media-section {
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
   background: rgba(0,0,0,0.01);
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 .section-title {
   text-transform: uppercase;
@@ -360,10 +382,16 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
   font-size: 25px;
   line-height: 25px;
   color: #F50810;
@@ -393,9 +421,14 @@ body{
   letter-spacing: 1px;
 }
 .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer {
   background: #333333;
